@@ -30,15 +30,11 @@ boxplot(p$tmin, main="My Graph", xlab="The x-axis", ylab="The y axis",col="green
 #BARPLOT
 barplot(p$tmax)
 barplot(p$tmax, main="My Graph", xlab="The x-axis", ylab="The y axis",col="green")
+     
+#LINE PLOT
 library(ggplot2)
 ggplot(p, aes(time, tmax)) +
   geom_point() +
   geom_line() +
   labs(x = "time", y = "tmax", 
   title = "tmax", color="red")
-
-
-
-
-
-
